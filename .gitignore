@@ -1,6 +1,5 @@
 .idea/
 Gemfile.lock
-*.apk
 *.app
 report.html
 node_modules
