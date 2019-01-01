@@ -60,6 +60,23 @@ class CategoriesScreen < BaseScreen
     end
     find_element(:id, "empty_textview").displayed?
   end
+
+
+  def check_products(table)
+    expected_product = table.hashes
+    expected_product.each do |product|
+      #Get product elements in the cart
+      products = find_elements(:id, "product_name")
+      #Get product names from the cart
+      product_list = []
+      products.each {|name| product_text = name.text
+      product_list << product_text
+      }
+      fail("Selected products are not in the cart") unless product_list.include? product[:product_1]
+      fail("Selected products are not in the cart") unless  product_list.include? product[:product_2]
+    end
+  end
+
 end
 
 def categories_screen

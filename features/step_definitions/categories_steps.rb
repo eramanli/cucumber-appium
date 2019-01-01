@@ -30,6 +30,11 @@ Then(/^Shopping cart page is opened$/) do
   categories_screen.wait_for_text("android.widget.TextView", "Shopping Cart")
 end
 
+And(/^I should see products in the cart$/) do |table|
+  # table is a table.hashes.keys # => [:Krem, :Deterjan]
+  categories_screen.check_products(table)
+end
+
 
 And(/^I delete all of products in my cart$/) do
   categories_screen.delete_all_products

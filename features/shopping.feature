@@ -16,6 +16,9 @@ Feature: Add some products to my cart
     And I add "Camsil" to my cart
     When I go to my cart
     Then Shopping cart page is opened
+    And I should see products in the cart
+      | product_1 | product_2 |
+      | Krem      | Camsil    |
     And I delete all of products in my cart
 
 
