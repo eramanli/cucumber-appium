@@ -41,7 +41,7 @@ class CategoriesScreen < BaseScreen
   end
 
   def click_back_button
-    back_button = find_element(:accessibility_id, "Yukarı git")
+    back_button = find_element(:accessibility_id, "Navigate up")
     back_button.click
   end
 
