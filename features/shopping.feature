@@ -1,8 +1,8 @@
 Feature: Add some products to my cart
 
-  Scenario: Log in to Getir and add some products
+  Scenario: Log in to xxx and add some products
     When Log in page is opened
-    Given I write my email as "hello@getir.com"
+    Given I write my email as "hello@xxx.com"
     And I write my password as "hello"
     And I click sign in button
     Then Categories page is opened
