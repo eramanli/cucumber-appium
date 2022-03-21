@@ -2,15 +2,15 @@ require 'appium_lib'
 require 'cucumber'
 require 'yaml'
 
-app_name = ENV['APPLICATION_NAME'] || (File.join(File.dirname(__FILE__), "getir-qa-case-study.apk"))
+app_name = ENV['APPLICATION_NAME'] || (File.join(File.dirname(__FILE__), "xxx.apk"))
 
 desired_caps = {
     caps: {
         platformName: "Android",
         deviceName: "AnyName",
         app: app_name,
-        appPackage: "com.getir.getirtestingcasestudy",
-        appActivity: "com.getir.getirtestingcasestudy.ui.login.LoginActivity",
+        appPackage: "com.xxx.yyyy",
+        appActivity: "com.xxx.yyyy.ui.login.LoginActivity",
         newCommandTimeout: "10000",
         gpsEnabled: true,
         skipUnlock: true,
